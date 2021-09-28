@@ -5,37 +5,37 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class CalculatorTest {
-    CalcTestData d = new CalcTestData() {};
+    CalcTestData data = new CalcTestData() {};
 
     @Test
     void getSum(){
-        assertEquals(d.integerSumRes, Calculator.getSum(d.integer1, d.integer2),
+        assertEquals(data.integerSumRes, Calculator.getSum(data.integer1, data.integer2),
                 "There is an error in assertion");
-        assertEquals(d.floatSumRes, Calculator.getSum(d.float1,d.float2),
+        assertEquals(data.floatSumRes, Calculator.getSum(data.float1, data.float2),
                 "There is an error in assertion");
     }
 
     @Test
     void getSubtraction(){
-        assertEquals(d.integerSubRes, Calculator.getSubtraction(d.integer1, d.integer2),
+        assertEquals(data.integerSubRes, Calculator.getSubtraction(data.integer1, data.integer2),
                 "There is an error in assertion");
-        assertEquals(d.floatSubRes, Calculator.getSubtraction(d.float1,d.float2),
+        assertEquals(data.floatSubRes, Calculator.getSubtraction(data.float1, data.float2),
                 "There is an error in assertion");
     }
 
     @Test
     void getMultiplication(){
-        assertEquals(d.integerMulRes, Calculator.getMultiplication(d.integer1, d.integer2),
+        assertEquals(data.integerMulRes, Calculator.getMultiplication(data.integer1, data.integer2),
                 "There is an error in assertion");
-        assertEquals(d.floatMulRes, Calculator.getMultiplication(d.float1,d.float2),
+        assertEquals(data.floatMulRes, Calculator.getMultiplication(data.float1, data.float2),
                 "There is an error in assertion");
     }
 
     @Test
     void getDivision(){
-        assertEquals(d.integerDivRes, Calculator.getDivision(d.integer1, d.integer2),
+        assertEquals(data.integerDivRes, Calculator.getDivision(data.integer1, data.integer2),
                 "There is an error in assertion");
-        assertEquals(d.floatDivRes, Calculator.getDivision(d.float1,d.float2),
+        assertEquals(data.floatDivRes, Calculator.getDivision(data.float1, data.float2),
                 "There is an error in assertion");
     }
 }
